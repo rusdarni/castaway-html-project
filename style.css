@@ -19,6 +19,7 @@ header {
     align-items: center;
     margin: 26px 0;
     padding: 0 70px;
+    min-width: 1300px;
 
 }
 
@@ -43,6 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 40px 70px;
+    min-width: 1300px;
 }
 
 .image {
@@ -83,6 +85,7 @@ ul {
     padding: 100px 70px 40px 70px;
     display: flex;
     justify-content: space-between;
+    min-width: 1300px;
 }
 
 h2 {
@@ -112,6 +115,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    min-width: 1300px;
 }
 
 .card-wrapper {
@@ -177,6 +181,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: 100px 70px;
+    min-width: 1300px;
 }
 
 .author-text-wrapper {
@@ -236,6 +241,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 100px 70px 100px 70px;
+    min-width: 1300px;
 }
 
 .form-text-wrapper span {
@@ -291,3 +297,39 @@ input {
     line-height: 1.92;
     color: rgba(255, 255, 255, 0.7);
 }
+
+.blocks-wrap {
+    margin: 100px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1300px;
+    gap: 15px;
+}
+
+.label{
+    background: #000;
+    border-radius: 32px;
+    max-width: 423px;
+    max-height: 321px;
+    padding: 54px 50px 51px 50px;
+}
+
+.label h4{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    padding-top: 21px;
+}
+
+.label p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 19px;
+}
+
+
+
+
