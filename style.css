@@ -330,6 +330,43 @@ input {
     padding-top: 19px;
 }
 
+.footer-wrapper nav ul{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+}
+
+.footer-wrapper nav{
+    min-width: 179px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-wrapper{
+    display: flex;
+    min-width: 1300px;
+    padding: 100px 70px;
+    gap: 16px;
+}
+
+.logo-social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 447px;
+}
+
+.footer-wrapper ul{
+    margin-top: 0;
+    display: flex;
+    gap: 17px;
+}
+
 
 
 
