@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +11,7 @@ body {
     color: #fff;
 }
 
-header {
-}
+
 
 .head {
     display: flex;
@@ -36,15 +36,18 @@ header {
     gap: 40px;
 }
 
-.main {
-}
+a {
+    text-decoration: none;
+    color: #fff;
 
+}
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 70px;
     min-width: 1300px;
+    position: relative;
 }
 
 .image {
@@ -108,6 +111,7 @@ button {
     padding: 12px 20px;
     display: flex;
     align-self: center;
+    transition: 0.2s;
 }
 
 .card {
@@ -200,6 +204,7 @@ p {
     border-radius: 400px;
     background: #118da8;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .arrow img{
@@ -242,6 +247,7 @@ p {
     justify-content: space-between;
     margin: 100px 70px 100px 70px;
     min-width: 1300px;
+    position: relative;
 }
 
 .form-text-wrapper span {
@@ -367,6 +373,84 @@ input {
     gap: 17px;
 }
 
+.nav a:hover {
+    text-decoration: none;
+    color: #118da8;
+    transition: color 0.6s;
+    cursor: pointer;
+}
 
+.nav a {
+    transition: 0.2s;
+}
 
+.footer-wrapper ul li img:hover, .listen ul li img:hover, .logo-social ul li img:hover{
+    transform: translateY(-5px);
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.footer-wrapper ul li img, .listen ul li img, .logo-social ul li img:hover {
+    transition: 0.2s;
+}
+
+button:hover {
+    background: none;
+    border: 2px solid #118da8;
+    border-radius: 6px;
+    transition: background 0.6s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: rotate(90deg);
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 1px solid #454444;
+    cursor: pointer;
+}
+
+.hero::before{
+    content: "";
+    display: inline-block;
+    width: 68px;
+    height: 74px;
+    background-image: url(img/pseudo-hero.png);
+    background-size: cover;
+    position: absolute;
+    top: 14px;
+    right: 1313px;
+}
+
+h1{
+    position: relative;
+
+}
+
+h1::after{
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 104px;
+    background-image: url(img/line.png);
+    background-size: cover;
+    position: absolute;
+    top: 164px;
+    right: 351px;
+}
+
+.form-text-wrapper::before{
+    content: "";
+    display: inline-block;
+    width: 147px;
+    height: 91px;
+    background-image: url(img/pseudo-form.png);
+    background-size: cover;
+    position: absolute;
+    top: 325px;
+    right: 1191px;
+}
 
