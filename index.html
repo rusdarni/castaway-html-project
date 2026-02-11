@@ -30,15 +30,37 @@
                 </li>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li class="menu__item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#episodes">Episodes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
 </header>
 <section class="main">
     <section class="hero" id="home">
-        <div>
+        <div class="main-image">
             <img src="img/IMAGE.svg" alt="main image" class="image">
         </div>
         <div class="text-icons-wrapper">
-            <h1>Take your podcast to the next <small class="level">level</small></h1>
+            <h1>Take your podcast to the <small class="next">next</small> <small class="level">level</small></h1>
             <div class="listen">
                 <small>Listen on</small>
                 <ul>
@@ -60,8 +82,11 @@
         </div>
         <article class="card">
             <div class="card-wrapper">
-                <div>
-                    <img src="img/Frame1.svg" alt="Frame1">
+                <div class="card-img">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/Frame1_768.svg">
+                        <img src="img/Frame1.svg" alt="Frame1">
+                    </picture>
                 </div>
                 <div class="info-wrapper">
                     <span>Gear</span>
@@ -74,7 +99,10 @@
             </div>
             <div class="card-wrapper">
                 <div>
-                    <img src="img/Frame2.svg" alt="Frame2">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/Frame2_768.svg">
+                        <img src="img/Frame2.svg" alt="Frame2">
+                    </picture>
                 </div>
                 <div class="info-wrapper">
                     <span>Tips & Tricks</span>
@@ -88,7 +116,10 @@
             </div>
             <div class="card-wrapper">
                 <div>
-                    <img src="img/Frame3.svg" alt="Frame3">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/Frame3_768.svg">
+                        <img src="img/Frame3.svg" alt="Frame3">
+                    </picture>
                 </div>
                 <div class="info-wrapper">
                     <span>Gear</span>
@@ -133,7 +164,7 @@
         </div>
     </div>
 </section>
-<section>
+<section class="review">
     <div class="review-container">
         <div class="blocks-wrap">
             <div class="label">
@@ -217,31 +248,33 @@
                     <li><a href=""><img src="img/facebook.svg" alt="facebook"></a></li>
                 </ul>
             </div>
-            <nav>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="nav"><a href="">Home</a></li>
+                        <li class="nav"><a href="">About</a></li>
+                        <li class="nav"><a href="">Episodes</a></li>
+                        <li class="nav"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="nav"><a href="">Style Guide</a></li>
+                        <li class="nav"><a href="">Instructions</a></li>
+                        <li class="nav"><a href="">Changelog</a></li>
+                        <li class="nav"><a href="">Credit</a></li>
+                        <li class="nav"><a href="">Powered by Webflow</a></li>
+                        <li class="nav"><a href="">Licenses</a></li>
+                    </ul>
+                </nav>
                 <ul>
-                    <li class="nav"><a href="">Home</a></li>
-                    <li class="nav"><a href="">About</a></li>
-                    <li class="nav"><a href="">Episodes</a></li>
-                    <li class="nav"><a href="">Contact</a></li>
+                    <li><a href=""><img src="img/spotify.svg" alt="spotify"></a></li>
+                    <li><a href=""><img src="img/podcast.svg" alt="podcast"></a></li>
+                    <li><a href=""><img src="img/cloud.svg" alt="cloud"></a></li>
+                    <li><a href=""><img src="img/itunes.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/listen.svg" alt="listen"></a></li>
                 </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nav"><a href="">Style Guide</a></li>
-                    <li class="nav"><a href="">Instructions</a></li>
-                    <li class="nav"><a href="">Changelog</a></li>
-                    <li class="nav"><a href="">Credit</a></li>
-                    <li class="nav"><a href="">Powered by Webflow</a></li>
-                    <li class="nav"><a href="">Licenses</a></li>
-                </ul>
-            </nav>
-            <ul>
-                <li><a href=""><img src="img/spotify.svg" alt="spotify"></a></li>
-                <li><a href=""><img src="img/podcast.svg" alt="podcast"></a></li>
-                <li><a href=""><img src="img/cloud.svg" alt="cloud"></a></li>
-                <li><a href=""><img src="img/itunes.svg" alt=""></a></li>
-                <li><a href=""><img src="img/listen.svg" alt="listen"></a></li>
-            </ul>
+            </div>
         </div>
     </div>
 </footer>
