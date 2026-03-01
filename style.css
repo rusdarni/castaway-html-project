@@ -55,12 +55,16 @@ a {
 
 .image {
     border-radius: 12px;
-    max-height: 873px;
-    min-width: 650px;
+    height: 873px;
+    max-width: 650px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .text-icons-wrapper {
-    margin: auto 64px 130px 60px;
+    margin: auto auto 130px 60px;
+    max-width: 650px;
+    width: 100%;
 }
 
 h1, .next {
@@ -140,6 +144,11 @@ button {
     padding: 40px 40px;
     display: flex;
     gap: 53px;
+    width: 100%;
+}
+
+.card-wrapper div picture img{
+    width: 100%;
 }
 
 .info-wrapper {
@@ -333,7 +342,7 @@ form input {
 .blocks-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 15px;
     width: 100%;
     margin: 0 auto;
@@ -377,7 +386,7 @@ form input {
 }
 
 .footer-wrapper div nav {
-    min-width: 179px;
+    max-width: 179px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -429,6 +438,8 @@ form input {
     transition: 0.2s;
 }
 
+
+
 button:hover {
     background: none;
     border: 2px solid #118da8;
@@ -450,6 +461,7 @@ input:focus {
 
 .main-image{
     position: relative;
+    max-width: 650px;
 }
 
 .main-image::before {
@@ -461,7 +473,7 @@ input:focus {
     background-size: cover;
     position: absolute;
     top: -26px;
-    right: 608px;
+    left: -26px;
 }
 
 .next {
@@ -621,7 +633,10 @@ input:focus {
     }
 
     .text-icons-wrapper {
-        margin: 60px 162px 0 40px;
+        margin: 60px 0 0 40px;
+        max-width: 526px;
+        width: 100%;
+        align-self: flex-start;
     }
 
     ul {
@@ -727,3 +742,169 @@ input:focus {
         overflow: hidden;
     }
 }
+
+
+@media screen and (max-width: 576px) {
+    .image{
+        max-width: 336px;
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    .next, .level {
+        font-size: 50px;
+    }
+
+    .hero {
+        padding-top: 40px;
+    }
+
+    .text-icons-wrapper {
+        margin: 40px 20px 0 20px;
+        max-width: 295px;
+    }
+
+    .listen {
+        padding: 75px 22px 0 22px;
+    }
+
+
+    .listen small {
+
+        font-size: 15px;
+        line-height: 1.6;
+        color: #fff;
+    }
+
+    .next::after {
+        width: 114px;
+        height: 66px;
+        left: 0;
+        top: 0;
+    }
+
+    .text-button-wrapper {
+        padding: 60px 40px 40px 40px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .card-wrapper{
+        width: 100%;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .info-wrapper small {
+        padding-top: 28px;
+        padding-bottom: 20px;
+    }
+    .info-wrapper h3 {
+        font-size: 40px;
+        line-height: 1.135;
+        letter-spacing: 0.06em;
+        padding-bottom: 28px;
+    }
+
+    .info-wrapper p {
+        padding-bottom: 30px;
+    }
+
+    .card-wrapper div img{
+
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card{
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+
+    .author-wrapper{
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .author{
+        height: 467px;
+        object-fit: cover;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .author-text-wrapper{
+        padding: 0;
+    }
+
+    .arrow{
+        width: 100px;
+        height: 100px;
+    }
+
+    .author-text-wrapper span{
+        padding-top: 0;
+    }
+
+    .author-wrapper h3 {
+        padding-bottom: 0;
+    }
+
+    .paragraph {
+        padding-bottom: 0;
+    }
+
+    .text-wrapper h3 {
+        font-size: 50px;
+    }
+
+    .text-wrapper {
+        padding: 60px 20px;
+    }
+
+    form {
+        padding: 0 20px 60px 20px;
+    }
+
+    .form-text-wrapper::before{
+        transform: rotate(0) scaleX(-1);
+        right: -10%;
+    }
+
+    .form-container {
+        padding: 60px 20px;
+    }
+
+    .blocks-wrap {
+        padding: 60px 20px;
+        gap: 16px;
+    }
+
+    .label{
+        padding: 53px 20px 50px 20px;
+    }
+
+    .footer-wrapper .navigate {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer-wrapper {
+        gap: 77px;
+        padding: 60px 40px;
+    }
+    ul {
+        flex-wrap: wrap;
+    }
+}
+
